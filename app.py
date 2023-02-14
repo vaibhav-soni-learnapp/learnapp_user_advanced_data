@@ -61,7 +61,7 @@ def user_access(email):
         data = json.loads(response.text)["accessPolicy"]
 
         for i in data:
-            if i["type"] == "BASE_PLAN":
+            if i["type"] == "ADVANCE_COURSE":
                 expiry_dates = []
                 subs = i["access"]
                 for j in subs:
